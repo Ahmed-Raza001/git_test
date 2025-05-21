@@ -99,4 +99,44 @@ showMessage();*/
     return str[str.length - 1];
   }
   console.log(lastLetter("abcd")); // Output: "d"*/
-  
+
+
+
+// creates a new div referenced in the variable 'div'
+/*const div = document.createElement("div");
+
+// adds the indicated style rule to the element in the div variable
+div.style.color = "blue";
+
+// adds several style rules
+div.style.cssText = "color: blue; background: white;";
+
+// adds several style rules
+div.setAttribute("style", "color: blue; background: white;");
+console.log("Starting execution...");*/
+
+const container = document.querySelector("#container");
+
+const ptag = document.createElement("p");
+ptag.textContent = "Hey I'm red!";
+ptag.style.color = "red";
+container.appendChild(ptag);
+
+const h1tag = document.createElement("h1");
+h1tag.textContent = "I'm a blue h3!";
+h1tag.style.color = "blue";
+container.appendChild(h1tag);
+
+const content = document.createElement("div");
+content.style.backgroundColor = "pink";
+content.style.border = "2px solid black";
+
+const h2tag = document.createElement("h2");
+h2tag.textContent = "I'm in a div!";
+const p2tag = document.createElement("p");
+p2tag.textContent = "ME TOO!";
+
+
+container.appendChild(content);
+container.appendChild(h2tag);
+container.appendChild(p2tag);
